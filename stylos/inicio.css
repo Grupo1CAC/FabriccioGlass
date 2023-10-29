@@ -1,0 +1,337 @@
+:root {
+    --color_prinipal: #1d4fa5;
+    --color_secundario: #404040;
+    --color_base: #f0f0f0;
+    --fuente_primcipal: Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--fuente_primcipal);
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+/*-------ESTILO HEADER--------------*/
+/*-------ESTILO NAV--------------*/
+/* Estilos BARRA DE NAVEGACIÓN */
+nav {
+    background-color: var(--color_prinipal);
+    color: var(--color_base);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 5px;
+    
+}
+
+nav a {
+    color: var(--color_base);
+    padding: 10px 0;  
+}
+
+nav a:hover {
+    border-bottom: 1px solid lightblue;
+font-size: 18px;
+}
+
+nav img {
+    height: 40px;
+    width: 40px;
+    border-radius: 25px;
+}
+
+/*-------ESTILO MAIN--------------*/
+main{
+    display: flex;
+    flex-direction: column;
+}
+/*-------ESTILO SECCION HERO--------------*/
+.hero{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image:url(../img/balcon-barandas-cristal.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+}
+
+.hero-tittle{
+    width: 70%;
+    text-align: center;
+    justify-content: center;
+}
+.hero-tittle h1{
+    font-size: 3rem;
+    color: var(--color_prinipal);
+    font-weight: 800;
+    padding-bottom: 20px;
+}
+.hero-tittle p{
+    font-size: 2rem;
+    color: var(--color_secundario);
+    padding-bottom: 30px;
+}
+
+/*-------hero-boton contacto--------------*/
+.hero .social i{
+    display: inline-block;
+    min-height: 60px;
+    width: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    background-color: var(--color_prinipal);
+}
+.hero .social i:hover {
+    background-color: var(--color_base);
+    color: var(--color_prinipal);
+    box-shadow: 0 0 20px var(--color_prinipal);
+}
+
+
+/*-------ESTILO SECCION NOSOTROS--------------*/
+.nosotros{
+    width: 100%;
+    background-color: var(--color_base);
+    margin-bottom: 20px;
+}
+
+.nosotros-info{
+    width: 80%;
+    text-align: justify;
+    margin: auto;
+    padding: 30px 5px;
+    
+}
+
+.nosotros-info h2{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--color_prinipal);
+}
+.nosotros-info p{
+    font-size: 20px;
+    color: var(--color_secundario);
+}
+/* SECCION 3--info */
+
+.s3 {
+    height: auto;
+    width: 100%;
+    max-width: 1500px;
+}
+
+.conteiner-info {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    justify-content: space-evenly;
+}
+
+
+.info-items {
+    display: block;
+    text-align: center;
+    width: 30%;
+    margin: 35px 5px;
+}
+
+.info-items h3 {
+    color: var(--color_prinipal);
+    font-size: 1.5rem;
+}
+
+.info-items p {
+    color: var(--color_secundario);
+    font-size: 1rem;
+    margin-top: 5px;
+}
+.info-items a {
+    cursor: pointer;
+}
+.info-items a:hover {
+    cursor: pointer;
+}
+
+
+/*--------------------------------*/
+/* --------SECCION-CATÁLOGO---------- */
+.catalogo{
+    max-width: 100%;
+    height: 100%;
+}
+.bloque-categoria{
+    width: 90%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.texto-catalogo{
+    width: 50%;
+    height: 100%;
+    padding: 10px 100px;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.texto-catalogo h3{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--color_prinipal);
+    margin-bottom: 20px;
+}
+
+.texto-catalogo span{
+    color: var(--color_secundario);
+    font-size: 20px;
+}
+.span-categoria{
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.span-categoria span{
+    font-size: 20px;
+    font-weight: 500;
+    color: lightblue;
+}
+.span-categoria span:hover{
+    cursor: pointer;
+    font-size: 35px;
+    color: var(--color_prinipal);
+}
+/*---------SCCION CATALOGO*/
+.img-catalogo{
+    width: 50%;
+    height: 100%;
+}
+.img-catalogo img{
+    width: 100%;
+    height:400px;
+    object-fit: cover;
+}
+/* --------SECCION FOOTER---------- */
+
+.footer{
+    padding: 20px 0 10px 0;
+    background-color: var(--color_prinipal);
+}
+
+.conteiner-footer {
+    text-align: center;
+}
+
+.footer_link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.link {
+    width: 200px;
+}
+
+.link h3 {
+    font-size: 15px;
+    color: var(--color_base);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.link a {
+    font-size: 15px;
+    color: var(--color_base);
+    display: block;
+    margin-bottom: 20px;
+}
+
+.link a:hover {
+    font-size: 20px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social i {
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: lightblue;
+    margin: 0 15px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: var(--color_base);
+    font-size: 20px;
+}
+
+.social i:hover {
+    background-color: rgb(26, 26, 158);
+    box-shadow: 0 0 20px lightblue;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    border-top: 1px solid var(--color_base);
+}
+
+.footer-text p {
+    font-size: 15px;
+    color: var(--color_base);
+}
+
+@media(max-width:990px) {
+    .info-items{
+        width: 70%;
+    }
+    .texto-catalogo{
+        width: 100%;
+        padding: 20px;
+    }
+    .img-catalogo{
+        width: 100%;
+
+    }
+    .footer {
+        padding: 30px;
+    }
+
+    .footer-link {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .social {
+        justify-content: center;
+    }
+
+    .footer-text {
+        text-align: center;
+    }
+}
