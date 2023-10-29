@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/stylos/styles_contacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contacto</title>
+</head>
+<body>
+    <header >
+        <nav class="nav">
+            <img src="/img/logo.jpg" alt="" class="logo">
+            <ul>
+                <li><a href="../index.html"target="_blank">Inicio</a></li>
+                <li><a href="/pages/nosotros.html" target="_blank" >Nosotros</a></li>
+                <li><a href="/pages/Catalogo.html" target="_blank">Catálogo</a></li>
+                <li><a href="#" >Contacto</a></li>
+            </ul>        
+        </nav>
+    </header>
+    <main class="contacto">
+        <section class="s1">
+            <div class="texto-contacto">
+                <h1 class="tittle">
+                    Fabriccio Glass
+                </h1>
+                <h2 class="p-contacto">
+                    Trabajos a Medida
+                </h2>
+                <div class="button_wathsapp">
+                    <a href="https://web.whatsapp.com/" target="_blank"><input type="submit" value="Llamar"></a>
+                </div>
+            </div>
+            <div class="conteiner">
+                <h3 id="consultas" class="tittle">Formulario de consultas</h3>
+
+                <!--"novalidate" no permite que se envie el form vacio-->
+                <form id="form-validation" novalidate>
+                    <div class="form-items">
+                        <span>Nombre</span>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su Nombre" required>
+                        <small id="nombreError" class="error-message"></small>
+                        
+                    </div>
+                    <div class="form-items">
+                        <span>Email</span>
+                        <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                        <small id="emailError" class="error-message"></small>
+                    </div>
+                    <div class="form-items">
+                        <span>Confirmación Email</span>
+                        <input type="email" id="confirmEmail" name="confirmEmail" placeholder="Confirme su correo electrónico" required>
+                        <small id="confirmEmailError" class="error-message"></small>
+                    </div>
+                    <div class="form-items">
+                        <span>Teléfono</span>
+                        <input type="number" id="telefono" name="telefono" placeholder="característica - número" required>
+                        <small id="telefonoError" class="error-message"></small>
+                    </div>
+                    <div class="form-items">
+                        <span>Mensaje</span>
+                        <textarea id="mensaje" name="mensaje" placeholder="Ingresa su consulta"></textarea>
+                        <small id="mensajeError" class="error-message"></small>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+                <div id="error-message" class="error-message"></div>
+                <div id="success-message" class="success-message"></div>
+            </div>
+        </section>
+
+        <section class="s2">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26281.143169998286!2d-58.435723662966794!3d-34.57525067600319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59f0e33d4eb%3A0xb4d7c2d0044d32e!2sParque%20Tres%20de%20Febrero!5e0!3m2!1ses-419!2sar!4v1697907484763!5m2!1ses-419!2sar"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="s3">
+            <div class="conteiner-info">
+                <div class="info-items">
+                    <div class="social"><i class="fa-regular fa-clock"></i></div>
+                    <h3>Horarios de Atención</h3>
+                    <p>Lunes a Sábado</p>
+                    <p>8:00 a 18:00hs</p>
+                </div>
+                <div class="info-items">
+                    <div class="social"><i class="fa-solid fa-handshake"></i></div>
+                    <h3>Zonas de trabajo</h3>
+                    <p>Por Aqui y Por alla</p>
+                </div>
+                <div class="info-items">
+                    <div class="social"><i class="fa-regular fa-map"></i></div>
+                    <h3>Dirección</h3>
+                    <p>Medio del lago</p>
+                    <p>Bosques de Palermo</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="conteiner-footer">
+            <div class="footer_link">
+                <div class="link">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li><a href="#">Presupuestos</a></li></li>
+                        <li><a href="#">Colocación</a></li></li>
+                    </ul>
+                </div>
+                <div class="link">
+                    <h3>Mamparas 2</h3>
+                    <ul>
+                        <li><a href="#">Baños</a></li>
+                        <li><a href="#">Balcones</a></li>
+                        <li><a href="#">Escaleras</a></li>
+                    </ul>
+                </div>
+                <div class="link">
+                    <h3>Menú 2</h3>
+                    <ul>
+                        <li><a href="/pages/home.html" target="_blank" >Inicio</a></li>
+                        <li><a href="/pages/Catalogo.html" target="_blank">Catálogo</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="/pages/nosotros.html" target="_blank">Nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="link" >
+                    <h3>Síguenos</h3>
+                    <div class="social">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-text">
+                <p>Grupo 1 - Comisiòn 23515</p>
+            </div>
+
+        </div>  
+    </footer>
+
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
